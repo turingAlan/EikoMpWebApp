@@ -1,0 +1,273 @@
+body {
+  background-color: "#F2F6FD";
+  padding-top: 30px;
+}
+.login {
+  display: flex;
+  width: 439px;
+  max-width: 95%;
+  margin-right: 520px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding-bottom: 60px;
+}
+
+img.eikomp_logo {
+  height: 113px;
+  width: 179px;
+}
+
+.login .top-sec {
+  background: #fff;
+  width: 100%;
+  padding: 2px 0 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -25px;
+}
+
+.login .top-sec p {
+  margin: 40px 0 20px;
+  font-size: 18px;
+  color: black;
+}
+
+.login .top-sec .button1 {
+  padding: 4px 15px;
+  background-color: #006091;
+  font-weight: 500;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+.login .input-box svg {
+  position: absolute;
+  left: 15px;
+}
+
+.login .button1 {
+  background: #55b700;
+  color: #fff;
+  font-size: 15px;
+  /* font-weight: 300; */
+  padding: 10px 134px;
+  border-radius: 10px;
+  /* border: none; */
+  text-transform: uppercase;
+  margin-top: 20px;
+  /* margin-bottom: 10px; */
+}
+
+.login-showpass {
+  position: absolute;
+  top: 19.5%;
+  right: 2.5%;
+}
+
+.sign-upbtn {
+  background: #082a71;
+  color: #fff;
+  font-size: 15px;
+  /* font-weight: 300; */
+  padding: 13px 61px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 42px;
+}
+
+.login-img {
+  width: 310px;
+  height: 175.51px;
+  align-self: center;
+  /* background-color: red; */
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .login {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-right: 0;
+  }
+
+  img.eikomp_logo {
+    margin-bottom: 20px;
+  }
+
+  .login .top-sec p {
+    margin: 20px 0;
+    font-size: 16px;
+  }
+
+  .login .top-sec .button1 {
+    font-size: 15px;
+  }
+
+  .login .button1,
+  .sign-upbtn {
+    padding: 10px 40px;
+  }
+
+  .login-img {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .login {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-right: 0;
+  }
+
+  img.eikomp_logo {
+    margin-bottom: 20px;
+  }
+
+  .login .top-sec p {
+    margin: 20px 0;
+    font-size: 14px;
+  }
+
+  .login .top-sec .button1 {
+    font-size: 14px;
+  }
+
+  .login .button1,
+  .sign-upbtn {
+    padding: 10px 30px;
+  }
+
+  .login-showpass {
+    top: 22%;
+    right: 5%;
+  }
+
+  .login-img {
+    display: none;
+  }
+}
+
+.container-line {
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-74px, 73px);
+  padding: 0;
+}
+
+.line {
+  width: 1px;
+  height: 125%;
+  background-color: #d3d3d3;
+  transform: translate(-268px, -76px);
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Default styles */
+.side-bar {
+  transform: translate(-154px, 41px);
+}
+
+/* Responsive styles */
+@media (max-width: 468px) {
+  .side-bar {
+    transform: none;
+    /* margin-top: 918px; */
+    /* margin-left: -249px; */
+    position: absolute;
+    top: 500px;
+    left: 43px;
+  }
+  .line {
+    display: none;
+  }
+}
+
+@media (min-width: 469px) and (max-width: 767px) {
+  .side-bar {
+    transform: none;
+    margin-top: 998px;
+    margin-left: -456px;
+  }
+
+  .line {
+    display: none;
+  }
+  .login-img {
+    width: 100%; /* Set width to 100% for smaller screens */
+    height: auto; /* Maintain aspect ratio by setting height to auto */
+    left: 10px; /* Adjust the left position for smaller screens */
+    top: 50%; /* Adjust the top position for smaller screens */
+    transform: translateY(-50%); /* Center vertically using transform */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .side-bar {
+    position: absolute;
+    /* transform: translate(-100px, 20px); */
+    top: -21px;
+    right: -123px;
+  }
+
+  .form {
+    margin-left: -203px;
+    margin-top: 0px;
+  }
+
+  .line {
+    display: none;
+  }
+  .login-img {
+    top: 100%;
+    left: 21px;
+    /* right: 44px; */
+    /* transform: translateX(-50%) translateY(-50%); */
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .side-bar {
+    transform: translate(
+      -154px,
+      41px
+    ); /* Keep the original translation for screens between 1024px and 1439px */
+  }
+  .form {
+    top: 36px;
+    left: 93px;
+    position: absolute;
+  }
+  .login-img {
+    width: 275px;
+    height: 157.51px;
+    left: 197px;
+    top: 492px;
+    transform: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .side-bar {
+    transform: translate(
+      -200px,
+      60px
+    ); /* Adjust the translation for larger screens */
+  }
+  .line {
+    display: none;
+  }
+}
