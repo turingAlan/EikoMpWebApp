@@ -1,5 +1,5 @@
 body {
-  background-color: "#F2F6FD";
+  background-color: rgb(242, 246, 253);
   padding-top: 30px;
 }
 .login {
@@ -18,13 +18,11 @@ img.eikomp_logo {
 }
 
 .login .top-sec {
-  background: #fff;
   width: 100%;
   padding: 2px 0 15px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: -25px;
 }
 
 .login .top-sec p {
@@ -78,6 +76,13 @@ img.eikomp_logo {
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 42px;
+}
+
+.mid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .login-img {
@@ -246,11 +251,7 @@ img.eikomp_logo {
       41px
     ); /* Keep the original translation for screens between 1024px and 1439px */
   }
-  .form {
-    top: 36px;
-    left: 93px;
-    position: absolute;
-  }
+
   .login-img {
     width: 275px;
     height: 157.51px;

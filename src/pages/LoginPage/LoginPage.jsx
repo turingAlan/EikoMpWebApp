@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 //Importing the utils and components
 import { apiLogin } from "@/helpers/api";
-import TextInput from "@/components/TextInput";
+import CustomTextInput from "@/components/CustomInput";
 
 //Importing the  assets
 import {
@@ -20,6 +20,7 @@ import {
   login_page,
 } from "@/assets/Login";
 import { eikomp_logo } from "@/assets/icons";
+import CustomButton from "../../components/CustomButton/Index";
 
 function Login() {
   const navigate = useNavigate();
@@ -95,55 +96,61 @@ function Login() {
               <h3
                 style={{
                   padding: 0,
-                  fontSize: "25px",
-                  marginTop: "15px",
+                  fontSize: "2rem",
+                  marginTop: "40px",
                   color: "#082A71",
+                  fontWeight: "400",
+                  fontFamily: "Noto sans",
                 }}
               >
-                WELCOME
+                Welcome
               </h3>
             </div>
-            <div className="input-box">
-              <input
-                name="username"
+            <div className="mid-container">
+              <CustomTextInput
+                type="text"
                 placeholder="Username"
                 onChange={handleTextInput}
               />
-            </div>
-            <TextInput
-              type="password"
-              placeholder="Password"
-              name="password"
-              onChange={handleTextInput}
-            />
+              <CustomTextInput
+                type="password"
+                placeholder="Password"
+                name="password"
+                onChange={handleTextInput}
+              />
 
-            <span
-              onClick={() => setLinkPopup(true)}
-              style={{
-                cursor: "pointer",
-                margin: "5px 140px 0px 0px",
-                fontWeight: "400",
-                fontSize: "17px",
-                color: "#19ABFE",
-              }}
-            >
-              Forgot Password?
-            </span>
-            {/* <Popup trigger={linkPopup} setTrigger={setLinkPopup}>
+              <span
+                onClick={() => setLinkPopup(true)}
+                style={{
+                  cursor: "pointer",
+                  margin: "5px 0px",
+                  fontWeight: "400",
+                  fontSize: "1.15rem",
+                  color: "#19ABFE",
+                  marginRight: "auto",
+                  marginBottom: "30px",
+                }}
+              >
+                Forgot Password?
+              </span>
+              {/* <Popup trigger={linkPopup} setTrigger={setLinkPopup}>
               <ForgetPassword />
             </Popup> */}
 
-            <button className="button1" onClick={handleSubmit}>
-              Login
-            </button>
+              <CustomButton
+                type="fill"
+                fillColor=" #55B700"
+                onPress={handleSubmit}
+                content="Login"
+              />
 
-            <button
-              className="sign-upbtn"
-              onClick={handleSignUp}
-              style={{ cursor: "pointer" }}
-            >
-              GET STARTED FOR FREE!
-            </button>
+              <CustomButton
+                type="fill"
+                fillColor=" #082A71"
+                onPress={handleSignUp}
+                content="Get Started for Free!"
+              />
+            </div>
             <img src={login_page} alt="" className="login-img" />
           </div>
         </div>
@@ -152,7 +159,7 @@ function Login() {
           <div className="line"></div>
         </div>
 
-        <div className="side-bar" style={{}}>
+        <div className="side-bar" style={{ backgroundColor: "white" }}>
           <h2 style={{ fontSize: "20px", margin: "33px -30px" }}>
             FEATURED APPS
           </h2>
